@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Yevhenii Riabokon — Junior Full-Stack Developer",
   description:
     "Portfolio von Yevhenii Riabokon — Junior Full-Stack Webentwickler in Kassel. React, Next.js, TypeScript, Node.js, PostgreSQL und AI-gestützte Entwicklung.",
-  metadataBase: new URL("https://portfolio-yevhenii.vercel.app"),
+  metadataBase: new URL("https://yevhenii-portfolio-navy.vercel.app"),
   themeColor: "#372111",
   keywords: [
     "Full-Stack Developer",
