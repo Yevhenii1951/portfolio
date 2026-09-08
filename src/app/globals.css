@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-1: #dbcfc0;
+  --color-cream-2: #f8f1e8;
+  --color-beige: #dacebf;
+  --color-beige-2: #dabfaf;
+  --color-gold: #d9be87;
+  --color-gold-deep: #b08d57;
+  --color-gold-body: #c3a273;
+  --color-cocoa: #372111;
+  --color-cocoa-deep: #2a190d;
+  --color-cocoa-soft: #554235;
+  --color-ink: #392314;
+  --color-ink-2: #3a2514;
+  --color-sale: #e32c2b;
+  --color-line: #bab0a3;
+  --color-line-light: #d3cdc5;
+  --color-line-frost: #d9d9d9;
+  --color-line-dark: #554235;
+}
+
+:root {
+  --font-serif: var(--font-noto), Georgia, "Times New Roman", serif;
+  --color-base: #392314;
+  --color-muted: rgb(57 35 20 / 0.6);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-cream-2);
+    color: var(--color-base);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-cocoa);
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .prose-lux {
+    color: var(--color-base);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+  }
+
+  .prose-lux p + p {
+    margin-top: 1rem;
+  }
+}
+
+@layer components {
+  /* ---------- Buttons: sweep fill left → right ---------- */
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    line-height: 1;
+    padding: 0.7rem 1.75rem;
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    isolation: isolate;
+    font-family: inherit;
+    transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+      90deg,
+      var(--btn-sweep, #fff) 0,
+      var(--btn-sweep, #fff) 100%
+    );
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .btn:hover::before {
+    background-size: 101% 100%;
+  }
+
+  .btn-solid {
+    background: #1c1c1c;
+    color: #fff;
+    --btn-sweep: #fff;
+  }
+
+  .btn-solid:hover {
+    color: #1c1c1c;
+  }
+
+  .btn-solid-dark {
+    background: #fff;
+    color: #1c1c1c;
+    --btn-sweep: #372111;
+  }
+
+  .btn-solid-dark:hover {
+    color: #fff;
+  }
+
+  .btn-outline {
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    --btn-sweep: var(--color-gold);
+  }
+
+  .btn-outline:hover {
+    color: var(--color-cocoa);
+  }
+
+  .btn-outline-light {
+    border: 1px solid #fff;
+    color: #fff;
+    --btn-sweep: #fff;
+  }
+
+  .btn-outline-light:hover {
+    color: var(--color-cocoa);
+  }
+
+  /* ---------- Slide underline links ---------- */
+  .link-line {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 12px;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.72;
+    transition: opacity 0.3s ease;
+  }
+
+  .link-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .link-line:hover {
+    opacity: 1;
+  }
+
+  .link-line:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* ---------- Badge ---------- */
+  .badge-lux {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 10px;
+    line-height: 1;
+    padding: 0.4em 0.65em;
+  }
+
+  /* ---------- Hero overlay ---------- */
+  .overlay-lux {
+    background: linear-gradient(
+      180deg,
+      rgba(54, 54, 54, 0) 0%,
+      rgba(4, 4, 4, 0.65) 100%
+    );
+  }
+}
