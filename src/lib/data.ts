@@ -243,7 +243,6 @@ export const stats = [
 ];
 
 export const nav = [
-  { href: "#profil", label: "Profil" },
   { href: "#stack", label: "Stack" },
   { href: "#projekte", label: "Projekte" },
   { href: "#werdegang", label: "Werdegang" },
