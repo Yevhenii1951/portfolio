@@ -97,6 +97,8 @@ export const projects: Project[] = [
     imageHover: "/img/berg-2.webp",
     badge: "Full-Stack",
     links: {
+      live: "https://bergblick-restaurant.vercel.app/",
+      liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/bergblick-restaurant",
     },
   },
@@ -118,6 +120,8 @@ export const projects: Project[] = [
     imageHover: "/img/hwk-2.webp",
     badge: "Full-Stack",
     links: {
+      live: "https://handwerker-booking-pro-kassel.vercel.app/",
+      liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
     },
   },
