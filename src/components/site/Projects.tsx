@@ -105,7 +105,7 @@ export function Projects() {
     <section id="projekte" className="scroll-mt-24 bg-white">
       <div className="mx-auto w-full max-w-[1360px] px-6 py-[clamp(4rem,9vw,7rem)] sm:px-8 lg:px-12">
         <SectionHead
-          index="03"
+          index="02"
           label="Portfolio"
           title="Ausgewählte Projekte"
           intro="Produktnahe Projekte vom Training bis zum Abschlussprojekt — mit echtem Deployment, Datenbanken, Authentifizierung und KI-Integration."

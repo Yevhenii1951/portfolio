@@ -7,7 +7,7 @@ export function Kontakt() {
     <section id="kontakt" className="scroll-mt-24 bg-cocoa text-white">
       <div className="mx-auto w-full max-w-[1150px] px-6 py-[clamp(4rem,10vw,8rem)] text-center sm:px-8 lg:px-12">
         <Reveal>
-          <p className="eyebrow mb-6 text-gold">05 · Kontakt</p>
+          <p className="eyebrow mb-6 text-gold">04 · Kontakt</p>
           <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-[400] uppercase leading-[1.25] tracking-[.18em]">
             Bereit für die
             <br />

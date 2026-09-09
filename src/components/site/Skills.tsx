@@ -6,7 +6,7 @@ export function Skills() {
     <section id="stack" className="scroll-mt-24 bg-cream-1">
       <div className="mx-auto w-full max-w-[1360px] px-6 py-[clamp(4rem,9vw,7rem)] sm:px-8 lg:px-12">
         <SectionHead
-          index="02"
+          index="01"
           label="Kompetenzen"
           title={
             <>

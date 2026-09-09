@@ -7,7 +7,7 @@ export function Werdegang() {
     <section id="werdegang" className="scroll-mt-24 bg-cream-1">
       <div className="mx-auto w-full max-w-[1360px] px-6 py-[clamp(4rem,9vw,7rem)] sm:px-8 lg:px-12">
         <SectionHead
-          index="04"
+          index="03"
           label="Werdegang"
           title="Erfahrung & Ausbildung"
           intro="Vom Teamleiter im Rettungsdienst über 15 Jahre Unternehmertum bis zur modernen Full-Stack-Entwicklung — mehr als nur Code."
