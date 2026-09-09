@@ -71,7 +71,8 @@ export function Werdegang() {
                 <div>
                   <p className="eyebrow text-gold">KI-gestützte Entwicklung</p>
                   <p className="mt-3 text-[13px] leading-relaxed text-white/75">
-                    Prompt- &amp; Context-Engineering, iterative Review-Loops,
+Loop Engineering, iterative
+                    Review-Loops,
                     Architekturverständnis statt blinder Code-Generierung — und
                     ein im Produktivcode laufender Groq-AI-Assistent.
                   </p>

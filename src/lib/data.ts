@@ -190,8 +190,7 @@ export const skills = [
       "OpenAI Codex",
       "GitHub Copilot",
       "Claude",
-      "Prompt Engineering",
-      "Context Engineering",
+      "Loop Engineering",
     ],
   },
 ];
