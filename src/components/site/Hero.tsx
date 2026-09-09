@@ -1,44 +1,25 @@
 "use client";
 
-import Image from "next/image";
-import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import { contact } from "@/lib/data";
 import { ArrowDownIcon } from "./icons";
 
-const SLIDES = ["/img/oma-1.webp", "/img/salon-1.webp", "/img/berg-1.webp"];
 const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 
 export function Hero() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), 5500);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section id="top" className="relative flex min-h-screen flex-col overflow-hidden bg-cocoa">
-      <AnimatePresence>
-        <motion.div
-          key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: EASE }}
-          className="absolute inset-0"
-        >
-          <Image
-            src={SLIDES[index]}
-            alt=""
-            fill
-            priority
-            quality={82}
-            sizes="100vw"
-            className="object-cover grayscale"
-          />
-        </motion.div>
-      </AnimatePresence>
+      <video
+        className="absolute inset-0 h-full w-full object-cover grayscale"
+        src="/img/hero-typing.mp4"
+        poster="/img/hero-typing-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+      />
 
       <div className="absolute inset-0 bg-black/45" />
       <div className="overlay-lux absolute inset-0" />
