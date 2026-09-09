@@ -118,12 +118,16 @@ export function CrestLogo({ className }: IconProps) {
         stroke="currentColor"
         strokeWidth="2"
       />
-      <path
-        d="M21 26c1.5 5 4.5 8 11 8s9.5-3 11-8c-1.6 7-5.4 11-11 11s-9.4-4-11-11Z"
-        fill="currentColor"
-      />
-      <path d="M20 36h24" stroke="currentColor" strokeWidth="2" />
-      <circle cx="32" cy="31" r="3" fill="none" stroke="currentColor" strokeWidth="2" />
+      <g
+        stroke="currentColor"
+        strokeWidth="2"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="20" y="22" width="24" height="16" rx="2" />
+        <path d="M16 38h32l2 4h-36z" />
+      </g>
     </svg>
   );
 }
