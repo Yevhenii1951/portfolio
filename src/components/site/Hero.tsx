@@ -31,19 +31,19 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease: EASE }}
           className="max-w-[780px]"
         >
-          <p className="eyebrow mb-7 text-gold">Full-Stack Webentwickler · Kassel, Deutschland</p>
+          <p className="eyebrow mb-7 text-[#EBD9A8]">Full-Stack Webentwickler · Kassel, Deutschland</p>
 
-          <h1 className="text-[clamp(2rem,5.5vw,3.75rem)] font-[400] uppercase leading-[1.15] tracking-[.15em]">
+          <h1 className="text-[clamp(2rem,5.5vw,3.75rem)] font-[400] uppercase leading-[1.15] tracking-[.15em] text-white">
             Yevhenii
             <br />
             Riabokon
           </h1>
 
-          <p className="mt-6 text-[13px] uppercase tracking-[.18em] text-gold-body">
+          <p className="mt-6 text-[13px] uppercase tracking-[.18em] text-[#E3C68E]">
             Junior Full-Stack Developer
           </p>
 
-          <p className="mx-auto mt-6 max-w-[560px] text-[0.9375rem] leading-relaxed text-white/70">
+          <p className="mx-auto mt-6 max-w-[560px] text-[0.9375rem] leading-relaxed text-white/90">
             React · Next.js · TypeScript · Node.js · PostgreSQL — und
             KI-gestützte Entwicklung. Ich baue saubere, schnelle Webanwendungen
             mit Verantwortung für das Ergebnis.
@@ -69,7 +69,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 1 }}
-        className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/70"
+        className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/90"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
