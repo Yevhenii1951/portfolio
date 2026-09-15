@@ -18,7 +18,6 @@ export function Werdegang() {
             <div className="border-l border-gold pl-8">
               {journey.map((item) => (
                 <div key={item.role} className="relative pb-10 last:pb-0">
-                  <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border border-gold bg-cream-1" />
                   <p className="eyebrow text-gold-deep">{item.period}</p>
                   <h3 className="mt-2 text-[15px] uppercase tracking-[.04em] text-ink">
                     {item.role}
