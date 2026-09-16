@@ -127,7 +127,7 @@ export const projects: Project[] = [
   },
   {
     id: "ukrainian-kitchen",
-    label: "Lehrprojekt · Full-Stack",
+    label: "Lehrprojekt",
     title: "Ukrainian Kitchen",
     description:
       "Bootcamp-Abschlussprojekt: Rezept-Plattform mit Next.js 15.5.25, Prisma 6.10.1, NextAuth v5, Zustand, Zod, HeroUI, Tailwind CSS v4 und Supabase Postgres. Authentifizierung, Rezept-CRUD, Zutaten-Katalog mit Seed-Skript (18 Zutaten, 6 Rezepte) und Region-Gate.",
