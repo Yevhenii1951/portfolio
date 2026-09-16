@@ -125,6 +125,31 @@ export const projects: Project[] = [
       code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
     },
   },
+  {
+    id: "ukrainian-kitchen",
+    label: "Lehrprojekt · Full-Stack",
+    title: "Ukrainian Kitchen",
+    description:
+      "Bootcamp-Abschlussprojekt: Rezept-Plattform mit Next.js 15.5.25, Prisma 6.10.1, NextAuth v5, Zustand, Zod, HeroUI, Tailwind CSS v4 und Supabase Postgres. Authentifizierung, Rezept-CRUD, Zutaten-Katalog mit Seed-Skript (18 Zutaten, 6 Rezepte) und Region-Gate.",
+    stack: [
+      "Next.js",
+      "Prisma",
+      "NextAuth",
+      "Tailwind 4",
+      "HeroUI",
+      "Supabase",
+      "PostgreSQL",
+    ],
+    imageFront: "https://ukrainian-kitchen.vercel.app/1borsch.jpg",
+    imageHover: "https://ukrainian-kitchen.vercel.app/deruni1.jpg",
+    badge: "Lehrprojekt",
+    featured: false,
+    links: {
+      live: "https://ukrainian-kitchen.vercel.app/",
+      liveLabel: "Live-Demo",
+      code: "https://github.com/Yevhenii1951/Ukrainian_Kitchen",
+    },
+  },
 ];
 
 export const smallProjects = [
@@ -248,3 +273,4 @@ export const nav = [
   { href: "#werdegang", label: "Werdegang" },
   { href: "#kontakt", label: "Kontakt" },
 ];
+
