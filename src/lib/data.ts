@@ -125,34 +125,16 @@ export const projects: Project[] = [
       code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
     },
   },
-  {
-    id: "ukrainian-kitchen",
-    label: "Lehrprojekt",
-    title: "Ukrainian Kitchen",
-    description:
-      "Bootcamp-Abschlussprojekt: Rezept-Plattform mit Next.js 15.5.25, Prisma 6.10.1, NextAuth v5, Zustand, Zod, HeroUI, Tailwind CSS v4 und Supabase Postgres. Authentifizierung, Rezept-CRUD, Zutaten-Katalog mit Seed-Skript (18 Zutaten, 6 Rezepte) und Region-Gate.",
-    stack: [
-      "Next.js",
-      "Prisma",
-      "NextAuth",
-      "Tailwind 4",
-      "HeroUI",
-      "Supabase",
-      "PostgreSQL",
-    ],
-    imageFront: "https://ukrainian-kitchen.vercel.app/1borsch.jpg",
-    imageHover: "https://ukrainian-kitchen.vercel.app/deruni1.jpg",
-    badge: "Lehrprojekt",
-    featured: false,
-    links: {
-      live: "https://ukrainian-kitchen.vercel.app/",
-      liveLabel: "Live-Demo",
-      code: "https://github.com/Yevhenii1951/Ukrainian_Kitchen",
-    },
-  },
 ];
 
 export const smallProjects = [
+  {
+    title: "Ukrainian Kitchen",
+    description:
+      "Full-Stack-Rezeptplattform mit Authentifizierung, Rezeptverwaltung und Zutaten-Katalog.",
+    demo: "https://ukrainian-kitchen.vercel.app/",
+    github: "https://github.com/Yevhenii1951/Ukrainian_Kitchen",
+  },
   {
     title: "Vite Game · Rate die Zahl",
     description:

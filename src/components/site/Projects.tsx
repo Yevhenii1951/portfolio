@@ -122,12 +122,9 @@ export function Projects() {
             <p className="eyebrow text-center text-gold-deep">Weitere Arbeiten</p>
             <div className="mx-auto mt-6 max-w-[820px]">
               {smallProjects.map((p) => (
-                <a
+                <article
                   key={p.title}
-                  href={p.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-between gap-6 border-b border-line-light py-5"
+                  className="flex items-center justify-between gap-6 border-b border-line-light py-5"
                 >
                   <div className="min-w-0">
                     <h4 className="text-[13px] uppercase tracking-[.02em] text-ink">
@@ -137,8 +134,29 @@ export function Projects() {
                       {p.description}
                     </p>
                   </div>
-                  <ArrowUpRightIcon className="h-5 w-5 shrink-0 text-gold-deep transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                </a>
+                  <div className="flex shrink-0 items-center gap-4">
+                    {"demo" in p ? (
+                      <a
+                        href={p.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-line inline-flex items-center gap-1"
+                      >
+                        Demo
+                        <ArrowUpRightIcon className="h-3 w-3" />
+                      </a>
+                    ) : null}
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-line inline-flex items-center gap-1"
+                    >
+                      Code
+                      <ArrowUpRightIcon className="h-3 w-3" />
+                    </a>
+                  </div>
+                </article>
               ))}
             </div>
 
