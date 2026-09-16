@@ -16,7 +16,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             fill
             quality={82}
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:opacity-0"
+            className="object-cover transition-all duration-700 group-hover:scale-105 group-hover:opacity-0"
           />
           <Image
             src={project.imageHover}
@@ -24,7 +24,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             fill
             quality={82}
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="scale-110 object-cover grayscale opacity-0 transition-all duration-700 group-hover:opacity-100"
+            className="scale-110 object-cover opacity-0 transition-all duration-700 group-hover:opacity-100"
           />
           <div className="absolute inset-0 bg-cocoa/0 transition-colors duration-500 group-hover:bg-cocoa/10" />
 
