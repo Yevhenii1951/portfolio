@@ -80,6 +80,27 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "kalyna",
+    label: "Next.js · Restaurant-Plattform",
+    title: "Kalyna Ukrainische Küche",
+    description:
+      "Portfolio-Demo einer ukrainischen Restaurantplattform mit lokalisierter Website, Speisekarte, Reservierungen, Bestelllogik, Adminbereich, Stripe-Testzahlungen und KI-Assistent.",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL",
+      "Supabase",
+      "Stripe",
+    ],
+    imageFront: "/img/kalyna-1.png",
+    imageHover: "/img/kalyna-1.png",
+    badge: "Restaurant App",
+    links: {
+      code: "https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche",
+    },
+  },
+  {
     id: "bergblick",
     label: "Astro + React Islands",
     title: "Bergblick Restaurant",
@@ -244,7 +265,7 @@ export const journey = [
 
 export const stats = [
   { value: "15+", label: "Jahre Technik & Handwerk" },
-  { value: "4", label: "Projekte produziert & deployt" },
+  { value: "5", label: "Projekte produziert & deployt" },
   { value: "12+", label: "DB-Modelle modelliert" },
   { value: "3", label: "Sprachen im Interface" },
 ];
@@ -255,4 +276,3 @@ export const nav = [
   { href: "#werdegang", label: "Werdegang" },
   { href: "#kontakt", label: "Kontakt" },
 ];
-
