@@ -97,6 +97,8 @@ export const projects: Project[] = [
     imageHover: "/img/kalyna-1.png",
     badge: "Restaurant App",
     links: {
+      live: "https://restourant-ukrainishe-kueche.vercel.app/de",
+      liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche",
     },
   },
