@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   description:
     "Portfolio von Yevhenii Riabokon — Junior Full-Stack Webentwickler in Kassel. React, Next.js, TypeScript, Node.js, PostgreSQL und AI-gestützte Entwicklung.",
   metadataBase: new URL("https://yevhenii-portfolio-navy.vercel.app"),
-  themeColor: "#372111",
   keywords: [
     "Full-Stack Developer",
     "React",
@@ -32,6 +31,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#372111",
 };
 
 export default function RootLayout({
