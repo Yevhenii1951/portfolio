@@ -6,7 +6,7 @@ export const contact = {
   phone: "+49 151 241 23597",
   linkedin: "https://www.linkedin.com/in/yevhenii-r-5584a83aa",
   github: "https://github.com/Yevhenii1951",
-  cv: "/cv/Yevhenii_Riabokon_Lebenslauf_Junior_FullStack_AI_DE.pdf",
+  cv: "/cv/Yevhenii_Riabokon_Lebenslauf_Junior_FullStack_DE_ATS.pdf",
 };
 
 export type Project = {
