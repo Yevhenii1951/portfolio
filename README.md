@@ -79,8 +79,8 @@ Creme-, Gold- und Kakao-Palette.
 
 <table>
   <tr>
-    <td><img src="public/for_readme/compressed/portfolio-1.webp" alt="Portfolio Hero" width="400"/></td>
-    <td><img src="public/for_readme/compressed/portfolio-2.webp" alt="Portfolio Stack Sektion" width="400"/></td>
+    <td><img src="public/for_readme/compressed/hero.webp" alt="Hero-Bereich mit Name, Profil und CTA" width="400"/></td>
+    <td><img src="public/for_readme/compressed/technical-stack.webp" alt="Technischer Stack mit Frontend, Backend und Datenbanken" width="400"/></td>
   </tr>
 </table>
 
@@ -88,8 +88,8 @@ Creme-, Gold- und Kakao-Palette.
 
 <table>
   <tr>
-    <td><img src="public/for_readme/compressed/portfolio-3.webp" alt="Portfolio Projektbereich" width="400"/></td>
-    <td><img src="public/for_readme/compressed/portfolio-4.webp" alt="Portfolio Projektkarte" width="400"/></td>
+    <td><img src="public/for_readme/compressed/selected-projects.webp" alt="Ausgewaehlte Projekte mit Projektkarten" width="400"/></td>
+    <td><img src="public/for_readme/compressed/more-projects.webp" alt="Weitere Arbeiten mit Demo- und Code-Links" width="400"/></td>
   </tr>
 </table>
 
@@ -97,8 +97,8 @@ Creme-, Gold- und Kakao-Palette.
 
 <table>
   <tr>
-    <td><img src="public/for_readme/compressed/portfolio-5.webp" alt="Portfolio Werdegang" width="400"/></td>
-    <td><img src="public/for_readme/compressed/portfolio-6.webp" alt="Portfolio Kontakt" width="400"/></td>
+    <td><img src="public/for_readme/compressed/experience-education.webp" alt="Erfahrung und Ausbildung mit Sprachen" width="400"/></td>
+    <td><img src="public/for_readme/compressed/contact-footer.webp" alt="Kontaktbereich und Footer" width="400"/></td>
   </tr>
 </table>
 
