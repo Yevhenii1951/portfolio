@@ -134,6 +134,9 @@ export function Footer() {
             DE · EN — gebaut mit Next.js &amp; Tailwind
           </p>
         </div>
+        <p className="mt-4 text-center text-[10px] text-white/35">
+          Ausgewählte Projekte sind Demos; Bildmaterial dient der Veranschaulichung.
+        </p>
       </div>
     </footer>
   );
