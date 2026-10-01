@@ -108,11 +108,12 @@ Creme-, Gold- und Kakao-Palette.
 
 | Projekt | Typ | Stack | Links |
 |---------|-----|-------|-------|
+| **Aue-Bäckerei Kassel** | Übungsprojekt / Bäckerei-Bestellplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, next-intl | [Code](https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel) |
 | **OMA-NETZ Kassel** | Abschlussprojekt / Nachbarschaftshilfe | Next.js 16, React 19, TypeScript, Prisma, PostgreSQL, NextAuth, Pusher, Groq AI | [Demo](https://oma-netz-final-project-valerija-yev.vercel.app/landing) - [Code](https://github.com/Yevhenii1951/Oma_netz_final_project_Valerija_Yevhenii) |
-| **SalonFlow Kassel** | Lokale Business-Website | Astro, TypeScript, Tailwind CSS, Decap CMS, JSON-LD, Netlify | [Demo](https://clinquant-jalebi-8c402e.netlify.app/) - [Code](https://github.com/Yevhenii1951/SalonFlow-Kassel) |
-| **Kalyna Ukrainische Kueche** | Restaurant-Plattform | Next.js 16, React 19, TypeScript, PostgreSQL, Supabase, Stripe | [Demo](https://restourant-ukrainishe-kueche.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche) |
-| **Bergblick Restaurant** | Full-Stack Restaurant-Site | Astro 5, React 19, Nanostores, Tailwind 4, Vercel Functions, PostgreSQL | [Demo](https://bergblick-restaurant.vercel.app/) - [Code](https://github.com/Yevhenii1951/bergblick-restaurant) |
-| **Handwerker-Booking Kassel** | Buchungsplattform | Next.js 16, Supabase, PostgreSQL, Zod, shadcn/ui, Vitest | [Demo](https://handwerker-booking-pro-kassel.vercel.app/) - [Code](https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel) |
+| **SalonFlow Kassel** | Übungsprojekt / Lokale Business-Website | Astro, TypeScript, Tailwind CSS, Decap CMS, JSON-LD | [Demo](https://clinquant-jalebi-8c402e.netlify.app/) - [Code](https://github.com/Yevhenii1951/SalonFlow-Kassel) |
+| **Kalyna Ukrainische Kueche** | Übungsprojekt / Restaurant-Plattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Stripe | [Demo](https://restourant-ukrainishe-kueche.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche) |
+| **Bergblick Restaurant** | Übungsprojekt / Full-Stack Restaurant-Site | Astro 5, TypeScript, React Islands, Vercel Postgres | [Demo](https://bergblick-restaurant.vercel.app/) - [Code](https://github.com/Yevhenii1951/bergblick-restaurant) |
+| **Handwerker-Booking Kassel** | Übungsprojekt / Buchungsplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Zod, Vitest | [Demo](https://handwerker-booking-pro-kassel.vercel.app/) - [Code](https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel) |
 
 ---
 

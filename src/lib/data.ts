@@ -29,12 +29,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "aue-baeckerei",
+    label: "Next.js · TypeScript · Supabase",
+    title: "Aue-Bäckerei Kassel",
+    description:
+      "Übungsprojekt für eine Kasseler Bäckerei: Produktkatalog, gemeinsamer Warenkorb, Vorbestellung, Lieferinformationen und eine Backliste für den nächsten Produktionstag. Der Schwerpunkt liegt auf einem durchgängigen, mehrsprachigen Bestellweg.",
+    highlights: ["Next.js 16", "TypeScript", "Supabase / PostgreSQL"],
+    imageFront: "/img/aue-1.webp",
+    imageHover: "/img/aue-2.webp",
+    badge: "Übungsprojekt",
+    links: {
+      code: "https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel",
+    },
+  },
+  {
     id: "kalyna",
-    label: "Next.js · Bestell- und Reservierungsplattform",
+    label: "Next.js · TypeScript · Supabase",
     title: "Kalyna Ukrainische Küche",
     description:
       "Der aufwendigste Teil ist nicht die Speisekarte, sondern der Bestellablauf: Preise werden serverseitig in Cent neu berechnet, Zahlungen laufen über signierte Webhooks, und belegte Tische verschwinden aus der Verfügbarkeit. Dazu Personalbereich mit Audit-Log und ein KI-Assistent mit Kostenlimit.",
-    highlights: ["Supabase Auth", "Stripe Webhooks", "next-intl (de/en/uk)"],
+    highlights: ["Supabase / PostgreSQL", "Stripe Webhooks", "next-intl (de/en/uk)"],
     imageFront: "/img/kalyna-1.png",
     badge: "Übungsprojekt",
     featured: true,
@@ -46,11 +60,11 @@ export const projects: Project[] = [
   },
   {
     id: "handwerker",
-    label: "Next.js + Supabase",
+    label: "Next.js · TypeScript · Supabase",
     title: "Handwerker-Booking Kassel",
     description:
       "Hier zählt, dass kein Termin doppelt vergeben wird: Die Slot-Vergabe läuft transaktional über PostgreSQL, Berechtigungen über Datenbank-Policies, und die Entfernung zur Werkstatt wird aus der Postleitzahl geprüft.",
-    highlights: ["Row-Level Security", "Transaktionen", "Vitest"],
+    highlights: ["Supabase / PostgreSQL", "Row-Level Security", "Vitest"],
     imageFront: "/img/hwk-1.webp",
     imageHover: "/img/hwk-2.webp",
     badge: "Übungsprojekt",
@@ -62,11 +76,11 @@ export const projects: Project[] = [
   },
   {
     id: "oma-netz",
-    label: "Teamprojekt · Nachbarschaftshilfe",
+    label: "Next.js · TypeScript · Prisma",
     title: "OMA-NETZ Kassel",
     description:
       "Mein Anteil an der Abschlussarbeit: Anmeldung, Buchungslogik und Datenmodell. Gesucht wird nach Zeitfenster und Standort statt über eine offene Anzeigenliste; Echtzeit-Chat und ein KI-Assistent begleiten die Vermittlung.",
-    highlights: ["Prisma", "Pusher", "Groq"],
+    highlights: ["Prisma / PostgreSQL", "Pusher", "Groq"],
     imageFront: "/img/oma-1.webp",
     imageHover: "/img/oma-2.webp",
     badge: "Abschlussprojekt",
@@ -79,11 +93,11 @@ export const projects: Project[] = [
   },
   {
     id: "ukrainian-kitchen",
-    label: "Next.js · Rezeptplattform",
+    label: "Next.js · TypeScript · Prisma",
     title: "Borschtsch & Pampuschky",
     description:
       "Rezeptplattform als Fullstack-Übungsprojekt. Das Rechenstück ist die Zutatenverwaltung: Kategorien, Einheiten und Preise pro Einheit werden konsistent gehalten, während Rezepte per Server-Rendering mit ISR ausgeliefert werden.",
-    highlights: ["NextAuth", "Prisma", "ISR / revalidatePath"],
+    highlights: ["NextAuth", "Prisma / PostgreSQL", "ISR / revalidatePath"],
     imageFront: "/img/ukrainian-1.webp",
     badge: "Übungsprojekt",
     links: {
@@ -94,11 +108,11 @@ export const projects: Project[] = [
   },
   {
     id: "bergblick",
-    label: "Astro + React Islands",
+    label: "Astro · TypeScript · Vercel Postgres",
     title: "Bergblick Restaurant",
     description:
       "Für die Praxisnähe in drei Sprachen gebaut (DE / RU / EN), weil die Zielgruppe mehrsprachig ist. Der Bestellweg läuft über React-Inseln und Vercel-Functions bis zur Statistik im Adminbereich.",
-    highlights: ["Astro 5", "Nanostores", "Vercel Functions"],
+    highlights: ["Astro 5", "React Islands", "Vercel Postgres"],
     imageFront: "/img/berg-1.webp",
     imageHover: "/img/berg-2.webp",
     badge: "Übungsprojekt",
@@ -110,11 +124,11 @@ export const projects: Project[] = [
   },
   {
     id: "salonflow",
-    label: "Astro · Lokales SEO",
+    label: "Astro · TypeScript · Tailwind",
     title: "SalonFlow Kassel",
     description:
       "Übungsprojekt für einen Friseursalon: Terminbuchung, Leistungen, Galerie, Teamdarstellung und Geo-Karte. Die Inhalte sind über ein Git-basiertes CMS ohne Redaktionssystem pflegbar.",
-    highlights: ["Astro", "Decap CMS", "JSON-LD"],
+    highlights: ["Astro", "Tailwind CSS", "Decap CMS / JSON-LD"],
     imageFront: "/img/salon-1.webp",
     imageHover: "/img/salon-2.webp",
     badge: "Übungsprojekt",
