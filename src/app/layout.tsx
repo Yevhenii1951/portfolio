@@ -12,22 +12,20 @@ const noto = Noto_Serif_JP({
 export const metadata: Metadata = {
   title: "Yevhenii Riabokon — Junior Full-Stack Developer",
   description:
-    "Portfolio von Yevhenii Riabokon — Junior Full-Stack Webentwickler in Kassel. React, Next.js, TypeScript, Node.js, PostgreSQL und AI-gestützte Entwicklung.",
+    "Junior Full-Stack Webentwickler in Baunatal bei Kassel. React, Next.js, TypeScript, Node.js und PostgreSQL — Anforderungen, Tests und CI vor dem Merge.",
   metadataBase: new URL("https://yevhenii-portfolio-navy.vercel.app"),
   keywords: [
-    "Full-Stack Developer",
+    "Junior Full-Stack Entwickler",
+    "Webentwickler Kassel",
     "React",
     "Next.js",
     "TypeScript",
-    "Node.js",
-    "Webentwickler Kassel",
-    "Portfolio",
-    "AI",
+    "PostgreSQL",
   ],
   openGraph: {
     title: "Yevhenii Riabokon — Junior Full-Stack Developer",
     description:
-      "Full-Stack-Webentwickler · React · TypeScript · Node.js · PostgreSQL · AI-gestützte Entwicklung",
+      "Junior Full-Stack Webentwickler in Baunatal bei Kassel · React · TypeScript · Node.js · PostgreSQL",
     type: "website",
     locale: "de_DE",
   },

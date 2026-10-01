@@ -1,21 +1,23 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { contact } from "@/lib/data";
 import { ArrowDownIcon } from "./icons";
 
 const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 
 export function Hero() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <section id="top" className="relative flex min-h-screen flex-col overflow-hidden bg-cocoa">
       <video
         className="absolute inset-0 h-full w-full object-cover grayscale"
         src="/img/hero-typing.mp4"
         poster="/img/hero-typing-poster.jpg"
-        autoPlay
+        autoPlay={!reduceMotion}
         muted
-        loop
+        loop={!reduceMotion}
         playsInline
         preload="auto"
         aria-hidden="true"
@@ -31,7 +33,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease: EASE }}
           className="max-w-[780px]"
         >
-          <p className="eyebrow mb-7 text-[#EBD9A8]">Full-Stack Webentwickler · Kassel, Deutschland</p>
+          <p className="eyebrow mb-7 text-[#EBD9A8]">Full-Stack Webentwickler · Baunatal bei Kassel</p>
 
           <h1 className="text-[clamp(2rem,5.5vw,3.75rem)] font-[400] uppercase leading-[1.15] tracking-[.15em] text-white">
             Yevhenii
@@ -44,9 +46,8 @@ export function Hero() {
           </p>
 
           <p className="mx-auto mt-6 max-w-[560px] text-[0.9375rem] leading-relaxed text-white/90">
-            React · Next.js · TypeScript · Node.js · PostgreSQL — und
-            KI-gestützte Entwicklung. Ich baue saubere, schnelle Webanwendungen
-            mit Verantwortung für das Ergebnis.
+            Ich baue Webanwendungen für kleine Unternehmen in der Region — mit
+            Datenbank, Anmeldung und Deployment, nicht nur mit Oberflächen.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -72,7 +73,7 @@ export function Hero() {
         className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/90"
       >
         <motion.div
-          animate={{ y: [0, 8, 0] }}
+          animate={reduceMotion ? undefined : { y: [0, 8, 0] }}
           transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
         >
           <ArrowDownIcon className="h-5 w-5" />

@@ -4,7 +4,7 @@ import { Reveal, SectionHead } from "./Reveal";
 import { ArrowUpRightIcon, GithubIcon } from "./icons";
 
 function ProjectCard({ project, delay }: { project: Project; delay: number }) {
-  const primaryLink = project.links.live ?? project.links.code;
+  const hasHover = Boolean(project.imageHover);
 
   return (
     <Reveal delay={delay} className="h-full">
@@ -16,16 +16,22 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             fill
             quality={82}
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition-all duration-700 group-hover:scale-105 group-hover:opacity-0"
+            className={`object-cover transition-all duration-700 ${
+              hasHover
+                ? "group-hover:scale-105 group-hover:opacity-0"
+                : "group-hover:scale-105"
+            }`}
           />
-          <Image
-            src={project.imageHover}
-            alt=""
-            fill
-            quality={82}
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="scale-110 object-cover opacity-0 transition-all duration-700 group-hover:opacity-100"
-          />
+          {project.imageHover ? (
+            <Image
+              src={project.imageHover}
+              alt=""
+              fill
+              quality={82}
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="scale-110 object-cover opacity-0 transition-all duration-700 group-hover:opacity-100"
+            />
+          ) : null}
           <div className="absolute inset-0 bg-cocoa/0 transition-colors duration-500 group-hover:bg-cocoa/10" />
 
           {project.badge ? (
@@ -39,14 +45,6 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
               {project.badge}
             </span>
           ) : null}
-
-          <a
-            href={primaryLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${project.title} öffnen`}
-            className="absolute inset-0"
-          />
         </div>
 
         <div className="mt-6 flex flex-1 flex-col text-center">
@@ -58,7 +56,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             {project.description}
           </p>
           <p className="mt-4 text-[11px] uppercase tracking-[.14em] text-[rgb(57,35,20,.5)]">
-            {project.stack.slice(0, 6).join(" · ")}
+            {project.highlights.join(" · ")}
           </p>
 
           <div className="mt-auto flex items-center justify-center gap-6 pt-5">
@@ -73,17 +71,18 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
                 <ArrowUpRightIcon className="h-3 w-3" />
               </a>
             ) : null}
-            {project.links.presentation ? (
-              <a
-                href={project.links.presentation}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-line inline-flex items-center gap-1"
-              >
-                Präsentation
-                <ArrowUpRightIcon className="h-3 w-3" />
-              </a>
-            ) : null}
+{project.links.presentation ? (
+                      <a
+                        href={project.links.presentation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Abschlussarbeit — Dokumentation und Präsentation, keine Anwendung"
+                        className="link-line inline-flex items-center gap-1"
+                      >
+                        Präsentation
+                        <ArrowUpRightIcon className="h-3 w-3" />
+                      </a>
+                    ) : null}
             <a
               href={project.links.code}
               target="_blank"
@@ -108,7 +107,7 @@ export function Projects() {
           index="02"
           label="Portfolio"
           title="Ausgewählte Projekte"
-          intro="Produktnahe Projekte vom Training bis zum Abschlussprojekt — mit echtem Deployment, Datenbanken, Authentifizierung und KI-Integration."
+          intro="Eine Abschlussarbeit und Übungsprojekte, die so nah am Praxisfall gebaut sind wie möglich: mit Datenbank, Anmeldung und echtem Deployment. Jede Karte nennt die eine Stelle, an der es schwierig wurde."
         />
 
         <div className="mt-14 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -135,7 +134,7 @@ export function Projects() {
                     </p>
                   </div>
                   <div className="flex shrink-0 items-center gap-4">
-                    {"demo" in p ? (
+                    {p.demo ? (
                       <a
                         href={p.demo}
                         target="_blank"

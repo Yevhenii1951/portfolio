@@ -10,7 +10,7 @@ export function Werdegang() {
           index="03"
           label="Werdegang"
           title="Erfahrung & Ausbildung"
-          intro="Vom Teamleiter im Rettungsdienst über 15 Jahre Unternehmertum bis zur modernen Full-Stack-Entwicklung — mehr als nur Code."
+          intro="Systemprogrammierung habe ich studiert, danach 15 Jahre lang selbstständig Technik installiert und gewartet. Webentwicklung ist die Konsequenz daraus: dieselbe Fehlersuche, nur im Browser und in der Datenbank."
         />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
@@ -58,8 +58,8 @@ export function Werdegang() {
                   Diplom-Ingenieur · Systemprogrammierung
                 </h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-[rgb(57,35,20,.65)]">
-                  Nationale Technische Universität Kirovograd (UA) · 2001 — 2007
-                  · Hochschulstatus: H+ laut Anabin / Kultusministerkonferenz.
+                  Nationale Technische Universität Kirovograd (UA) · 2001 — 2007.
+                  In Deutschland anerkannt (H+ laut Anabin).
                 </p>
               </div>
             </Reveal>
@@ -68,12 +68,16 @@ export function Werdegang() {
               <div className="flex items-start gap-4 bg-cocoa p-7 text-white">
                 <SparkIcon className="mt-0.5 h-6 w-6 shrink-0 text-gold" />
                 <div>
-                  <p className="eyebrow text-gold">KI-gestützte Entwicklung</p>
+                  <p className="eyebrow text-gold">Arbeitsweise</p>
                   <p className="mt-3 text-[13px] leading-relaxed text-white/75">
-Loop Engineering, iterative
-                    Review-Loops,
-                    Architekturverständnis statt blinder Code-Generierung — und
-                    ein im Produktivcode laufender Groq-AI-Assistent.
+                    Anforderungen und Abnahmekriterien schreibe ich vor der
+                    Implementierung auf. Tests dort, wo das Verhalten rechnet —
+                    Preise, Terminvergabe, Berechtigungen. Jede Änderung geht als
+                    PR mit Review und CI-Gate rein, nicht direkt auf main.
+                  </p>
+                  <p className="mt-3 text-[13px] leading-relaxed text-white/75">
+                    Im Restaurantprojekt sind das 53 Testdateien, Unit und
+                    Integration gegen eine echte PostgreSQL-Instanz.
                   </p>
                 </div>
               </div>

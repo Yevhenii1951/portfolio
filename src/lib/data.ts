@@ -1,7 +1,7 @@
 export const contact = {
   name: "Yevhenii Riabokon",
   role: "Junior Full-Stack Webentwickler",
-  location: "Baunatal, Hessen · Deutschland",
+  location: "Baunatal bei Kassel",
   email: "eugen.riabokon@gmail.com",
   phone: "+49 151 241 23597",
   linkedin: "https://www.linkedin.com/in/yevhenii-r-5584a83aa",
@@ -14,9 +14,9 @@ export type Project = {
   label: string;
   title: string;
   description: string;
-  stack: string[];
+  highlights: string[];
   imageFront: string;
-  imageHover: string;
+  imageHover?: string;
   badge?: string;
   featured?: boolean;
   links: {
@@ -29,27 +29,47 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "kalyna",
+    label: "Next.js · Bestell- und Reservierungsplattform",
+    title: "Kalyna Ukrainische Küche",
+    description:
+      "Der aufwendigste Teil ist nicht die Speisekarte, sondern der Bestellablauf: Preise werden serverseitig in Cent neu berechnet, Zahlungen laufen über signierte Webhooks, und belegte Tische verschwinden aus der Verfügbarkeit. Dazu Personalbereich mit Audit-Log und ein KI-Assistent mit Kostenlimit.",
+    highlights: ["Supabase Auth", "Stripe Webhooks", "next-intl (de/en/uk)"],
+    imageFront: "/img/kalyna-1.png",
+    badge: "Restaurant-Plattform",
+    featured: true,
+    links: {
+      live: "https://restourant-ukrainishe-kueche.vercel.app/de",
+      liveLabel: "Live-Demo",
+      code: "https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche",
+    },
+  },
+  {
+    id: "handwerker",
+    label: "Next.js + Supabase",
+    title: "Handwerker-Booking Kassel",
+    description:
+      "Hier zählt, dass kein Termin doppelt vergeben wird: Die Slot-Vergabe läuft transaktional über PostgreSQL, Berechtigungen über Datenbank-Policies, und die Entfernung zur Werkstatt wird aus der Postleitzahl geprüft.",
+    highlights: ["Row-Level Security", "Transaktionen", "Vitest"],
+    imageFront: "/img/hwk-1.webp",
+    imageHover: "/img/hwk-2.webp",
+    badge: "Buchungsplattform",
+    links: {
+      live: "https://handwerker-booking-pro-kassel.vercel.app/",
+      liveLabel: "Live-Demo",
+      code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
+    },
+  },
+  {
     id: "oma-netz",
-    label: "Full-Stack · Abschlussprojekt",
+    label: "Teamprojekt · Nachbarschaftshilfe",
     title: "OMA-NETZ Kassel",
     description:
-      "Nachbarschaftshilfe-Plattform, die ältere Menschen in Kassel mit freiwilligen Helfern verbindet — mit rollenbasierter Authentifizierung, Echtzeit-Chat und einem integrierten KI-Assistenten.",
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "NextAuth",
-      "Pusher",
-      "Groq AI",
-      "Leaflet",
-      "Vercel",
-    ],
+      "Mein Anteil an der Abschlussarbeit: Anmeldung, Buchungslogik und Datenmodell. Gesucht wird nach Zeitfenster und Standort statt über eine offene Anzeigenliste; Echtzeit-Chat und ein KI-Assistent begleiten die Vermittlung.",
+    highlights: ["Prisma", "Pusher", "Groq"],
     imageFront: "/img/oma-1.webp",
     imageHover: "/img/oma-2.webp",
     badge: "Abschlussprojekt",
-    featured: true,
     links: {
       live: "https://oma-netz-final-project-valerija-yev.vercel.app/landing",
       liveLabel: "Live-Demo",
@@ -58,48 +78,18 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "salonflow",
-    label: "Astro · Lokales SEO",
-    title: "SalonFlow Kassel",
+    id: "ukrainian-kitchen",
+    label: "Next.js · Lernprojekt",
+    title: "Borschtsch & Pampuschky",
     description:
-      "Reales Kundenprojekt-Setup für einen Friseursalon: Online-Termin, Leistungen, Galerie, Team, OpenStreetMap-Kontakt und CMS-ready Content mit Decap CMS — deployt auf Netlify.",
-    stack: [
-      "Astro",
-      "TypeScript",
-      "Tailwind CSS",
-      "Decap CMS",
-      "JSON-LD",
-      "Netlify",
-    ],
-    imageFront: "/img/salon-1.webp",
-    imageHover: "/img/salon-2.webp",
-    badge: "Statische Site",
+      "Rezeptplattform als Fullstack-Übungsprojekt. Das Rechenstück ist die Zutatenverwaltung: Kategorien, Einheiten und Preise pro Einheit werden konsistent gehalten, während Rezepte per Server-Rendering mit ISR ausgeliefert werden.",
+    highlights: ["NextAuth", "Prisma", "ISR / revalidatePath"],
+    imageFront: "/img/ukrainian-1.webp",
+    badge: "Lernprojekt",
     links: {
-      live: "https://clinquant-jalebi-8c402e.netlify.app/",
-      code: "https://github.com/Yevhenii1951/SalonFlow-Kassel",
-    },
-  },
-  {
-    id: "kalyna",
-    label: "Next.js · Restaurant-Plattform",
-    title: "Kalyna Ukrainische Küche",
-    description:
-      "Portfolio-Demo einer ukrainischen Restaurantplattform mit lokalisierter Website, Speisekarte, Reservierungen, Bestelllogik, Adminbereich, Stripe-Testzahlungen und KI-Assistent.",
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "PostgreSQL",
-      "Supabase",
-      "Stripe",
-    ],
-    imageFront: "/img/kalyna-1.png",
-    imageHover: "/img/kalyna-1.png",
-    badge: "Restaurant App",
-    links: {
-      live: "https://restourant-ukrainishe-kueche.vercel.app/de",
+      live: "https://ukrainian-kitchen.vercel.app/",
       liveLabel: "Live-Demo",
-      code: "https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche",
+      code: "https://github.com/Yevhenii1951/Ukrainian_Kitchen",
     },
   },
   {
@@ -107,18 +97,11 @@ export const projects: Project[] = [
     label: "Astro + React Islands",
     title: "Bergblick Restaurant",
     description:
-      "Dreisprachige (DE / RU / EN) Restaurant-Website mit Bestellsystem: Warenkorb, Abholung/Lieferung, Vercel-Functions, PostgreSQL, Telegram-Benachrichtigungen und Statistik-Dashboard.",
-    stack: [
-      "Astro 5",
-      "React 19",
-      "Nanostores",
-      "Tailwind 4",
-      "Vercel Functions",
-      "PostgreSQL",
-    ],
+      "Für die Praxisnähe in drei Sprachen gebaut (DE / RU / EN), weil die Zielgruppe mehrsprachig ist. Der Bestellweg läuft über React-Inseln und Vercel-Functions bis zur Statistik im Adminbereich.",
+    highlights: ["Astro 5", "Nanostores", "Vercel Functions"],
     imageFront: "/img/berg-1.webp",
     imageHover: "/img/berg-2.webp",
-    badge: "Full-Stack",
+    badge: "Lernprojekt",
     links: {
       live: "https://bergblick-restaurant.vercel.app/",
       liveLabel: "Live-Demo",
@@ -126,55 +109,54 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "handwerker",
-    label: "Next.js + Supabase",
-    title: "Handwerker-Booking Kassel",
+    id: "salonflow",
+    label: "Astro · Lokales SEO",
+    title: "SalonFlow Kassel",
     description:
-      "Buchungsplattform für Handwerker: Slots im 14-Tage-Kalender, konfliktfreie Termine per PostgreSQL, Geo-Fence-Check der PLZ, RLS, Rollen-Dashboards und Portfoliouploads.",
-    stack: [
-      "Next.js 16",
-      "Supabase",
-      "PostgreSQL",
-      "zod",
-      "shadcn/ui",
-      "Vitest",
-    ],
-    imageFront: "/img/hwk-1.webp",
-    imageHover: "/img/hwk-2.webp",
-    badge: "Full-Stack",
+      "Übungsprojekt für einen Friseursalon: Terminbuchung, Leistungen, Galerie, Teamdarstellung und Geo-Karte. Die Inhalte sind über ein Git-basiertes CMS ohne Redaktionssystem pflegbar.",
+    highlights: ["Astro", "Decap CMS", "JSON-LD"],
+    imageFront: "/img/salon-1.webp",
+    imageHover: "/img/salon-2.webp",
+    badge: "Übungsprojekt",
     links: {
-      live: "https://handwerker-booking-pro-kassel.vercel.app/",
-      liveLabel: "Live-Demo",
-      code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
+      live: "https://clinquant-jalebi-8c402e.netlify.app/",
+      code: "https://github.com/Yevhenii1951/SalonFlow-Kassel",
     },
   },
 ];
 
-export const smallProjects = [
+export type SmallProject = {
+  title: string;
+  description: string;
+  demo?: string;
+  github: string;
+};
+
+export const smallProjects: SmallProject[] = [
   {
-    title: "Ukrainian Kitchen",
+    title: "Oma-Netz Präsentation",
     description:
-      "Full-Stack-Rezeptplattform mit Authentifizierung, Rezeptverwaltung und Zutaten-Katalog.",
-    demo: "https://ukrainian-kitchen.vercel.app/",
-    github: "https://github.com/Yevhenii1951/Ukrainian_Kitchen",
+      "Interaktive Slide-Präsentation zur Abschlussarbeit: Problemstellung, Planung, Architektur und Code-Durchgang als eine Seite statt als Foliensatz.",
+    demo: "https://oma-netz-presentation.onrender.com",
+    github: "https://github.com/Yevhenii1951/Oma-Netz_Presentation",
   },
   {
-    title: "Vite Game · Rate die Zahl",
+    title: "Referat Node.js",
     description:
-      "React + TypeScript App mit eigener API auf MongoDB — Zahlen-Ratespiel mit Bestenliste.",
-    github: "https://github.com/Yevhenii1951/Vite_project_GAME_Valeriia_Yevgenii",
+      "Interaktive deutschsprachige Präsentation zu Node.js mit ausführbaren Demos zu Event Loop, Dateisystem und HTTP.",
+    github: "https://github.com/Yevhenii1951/Referat_NodeJS",
   },
   {
     title: "Forum-Projekt",
     description:
-      "Full-Stack-Forum mit Prisma, Authentifizierung und Themen-Diskussionen.",
+      "Forum mit Prisma, Authentifizierung und Themen-Diskussionen.",
     github: "https://github.com/Yevhenii1951/forum-project-Valeriia-Yevhenii",
   },
   {
-    title: "CROWDS · Realtime Practicum",
+    title: "Vite Game · Rate die Zahl",
     description:
-      "WebSocket-Schicht mit Heartbeat, Reconnect (Backoff + Jitter), State-Recovery und Lasttests bis 900 simulierte Clients (Node.js, Socket.IO, MongoDB, Vue).",
-    github: "https://github.com/Yevhenii1951",
+      "Ratespiel mit eigener API auf MongoDB und Bestenliste.",
+    github: "https://github.com/Yevhenii1951/Vite_project_GAME_Valeriia_Yevgenii",
   },
 ];
 
@@ -191,37 +173,27 @@ export const skills = [
       "Tailwind CSS",
       "Vue.js",
       "Astro",
-    ],
-  },
-  {
-    title: "Backend",
-    items: [
-      "Node.js",
-      "Express",
-      "REST APIs",
-      "WebSocket",
-      "Socket.IO",
       "Server Components",
       "Server Actions",
     ],
   },
   {
+    title: "Backend",
+    items: ["Node.js", "Express", "REST APIs", "WebSocket", "Socket.IO"],
+  },
+  {
     title: "Datenbanken",
-    items: ["PostgreSQL", "MongoDB", "Prisma ORM", "Supabase", "Row-Level Security"],
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "Prisma ORM",
+      "Supabase",
+      "Row-Level Security",
+    ],
   },
   {
     title: "Tools & Deployment",
-    items: ["Git", "GitHub", "Linux", "Vercel", "Netlify", "Render", "Docker", "Vitest"],
-  },
-  {
-    title: "KI-gestützte Entwicklung",
-    items: [
-      "Groq SDK",
-      "OpenAI Codex",
-      "GitHub Copilot",
-      "Claude",
-      "Loop Engineering",
-    ],
+    items: ["Git", "GitHub", "Linux", "Vercel", "Netlify", "Render", "Vitest"],
   },
 ];
 
@@ -240,9 +212,8 @@ export const journey = [
     role: "Software-Engineering-Praktikum",
     org: "CROWDS · Echtzeit-Synchronisationssystem",
     points: [
-      "Zuverlässige WebSocket-Schicht mit Heartbeat, Ping/Pong und Reconnect",
-      "Lastsimulator für bis zu 900 parallele Clients",
-      "Versioniertes JSON-Kommandoschema und Protokollanalyse",
+      "WebSocket-Schicht mit Heartbeat, Ping/Pong und Reconnect nach Backoff",
+      "Lasttest mit bis zu 900 parallelen Clients und versioniertem Kommandoschema",
     ],
   },
   {
@@ -258,18 +229,8 @@ export const journey = [
     period: "1997 — 2008",
     role: "Teamleiter · Brandschutz und Rettung",
     org: "Hauptdirektion für Notfallsituationen der Ukraine",
-    points: [
-      "Teamführung im Schichtbetrieb unter hohem Druck",
-      "Strukturiertes Arbeiten und klare Kommunikation in kritischen Situationen",
-    ],
+    points: ["Teamleitung im Schichtdienst"],
   },
-];
-
-export const stats = [
-  { value: "15+", label: "Jahre Technik & Handwerk" },
-  { value: "5", label: "Projekte produziert & deployt" },
-  { value: "12+", label: "DB-Modelle modelliert" },
-  { value: "3", label: "Sprachen im Interface" },
 ];
 
 export const nav = [

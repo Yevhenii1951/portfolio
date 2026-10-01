@@ -14,7 +14,7 @@ export function Skills() {
               <br className="hidden sm:block" /> Stack
             </>
           }
-          intro="Ich wähle den Stack nach dem Projekt — nicht umgekehrt. Kern: TypeScript im Frontend und Backend, PostgreSQL als Datenbasis, Vercel & Netlify für Deployment."
+          intro="Frontend, Backend, Datenbanken und Deployment — die Werkzeuge, die in den Projekten unten tatsächlich vorkommen."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
