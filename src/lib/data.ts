@@ -36,7 +36,7 @@ export const projects: Project[] = [
       "Der aufwendigste Teil ist nicht die Speisekarte, sondern der Bestellablauf: Preise werden serverseitig in Cent neu berechnet, Zahlungen laufen über signierte Webhooks, und belegte Tische verschwinden aus der Verfügbarkeit. Dazu Personalbereich mit Audit-Log und ein KI-Assistent mit Kostenlimit.",
     highlights: ["Supabase Auth", "Stripe Webhooks", "next-intl (de/en/uk)"],
     imageFront: "/img/kalyna-1.png",
-    badge: "Restaurant-Plattform",
+    badge: "Übungsprojekt",
     featured: true,
     links: {
       live: "https://restourant-ukrainishe-kueche.vercel.app/de",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     highlights: ["Row-Level Security", "Transaktionen", "Vitest"],
     imageFront: "/img/hwk-1.webp",
     imageHover: "/img/hwk-2.webp",
-    badge: "Buchungsplattform",
+    badge: "Übungsprojekt",
     links: {
       live: "https://handwerker-booking-pro-kassel.vercel.app/",
       liveLabel: "Live-Demo",
@@ -79,13 +79,13 @@ export const projects: Project[] = [
   },
   {
     id: "ukrainian-kitchen",
-    label: "Next.js · Lernprojekt",
+    label: "Next.js · Rezeptplattform",
     title: "Borschtsch & Pampuschky",
     description:
       "Rezeptplattform als Fullstack-Übungsprojekt. Das Rechenstück ist die Zutatenverwaltung: Kategorien, Einheiten und Preise pro Einheit werden konsistent gehalten, während Rezepte per Server-Rendering mit ISR ausgeliefert werden.",
     highlights: ["NextAuth", "Prisma", "ISR / revalidatePath"],
     imageFront: "/img/ukrainian-1.webp",
-    badge: "Lernprojekt",
+    badge: "Übungsprojekt",
     links: {
       live: "https://ukrainian-kitchen.vercel.app/",
       liveLabel: "Live-Demo",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     highlights: ["Astro 5", "Nanostores", "Vercel Functions"],
     imageFront: "/img/berg-1.webp",
     imageHover: "/img/berg-2.webp",
-    badge: "Lernprojekt",
+    badge: "Übungsprojekt",
     links: {
       live: "https://bergblick-restaurant.vercel.app/",
       liveLabel: "Live-Demo",
