@@ -44,7 +44,7 @@ export function Header() {
                 Yevhenii Riabokon
               </span>
               <span className="text-[10px] uppercase tracking-[.18em] opacity-60">
-                Full-Stack Developer
+                Junior Full-Stack Developer
               </span>
             </span>
           </a>
