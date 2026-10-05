@@ -5,10 +5,11 @@ import { ArrowUpRightIcon, GithubIcon } from "./icons";
 
 function ProjectCard({ project, delay }: { project: Project; delay: number }) {
   const hasHover = Boolean(project.imageHover);
+  const cardHref = project.links.live ?? project.links.code;
 
   return (
     <Reveal delay={delay} className="h-full">
-      <article className="group flex h-full flex-col">
+      <article className="group relative flex h-full flex-col">
         <div className="relative aspect-[4/3] overflow-hidden bg-cream-1">
           <Image
             src={project.imageFront}
@@ -59,7 +60,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             {project.highlights.join(" · ")}
           </p>
 
-          <div className="mt-auto flex items-center justify-center gap-6 pt-5">
+          <div className="relative z-10 mt-auto flex items-center justify-center gap-6 pt-5">
             {project.links.live ? (
               <a
                 href={project.links.live}
@@ -94,6 +95,17 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             </a>
           </div>
         </div>
+
+        <a
+          href={cardHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-0"
+        >
+          <span className="sr-only">
+            {project.title} — {project.links.live ? "Live-Demo öffnen" : "Code öffnen"}
+          </span>
+        </a>
       </article>
     </Reveal>
   );
@@ -123,7 +135,7 @@ export function Projects() {
               {smallProjects.map((p) => (
                 <article
                   key={p.title}
-                  className="flex items-center justify-between gap-6 border-b border-line-light py-5"
+                  className="group relative flex items-center justify-between gap-6 border-b border-line-light py-5"
                 >
                   <div className="min-w-0">
                     <h4 className="text-[13px] uppercase tracking-[.02em] text-ink">
@@ -133,7 +145,7 @@ export function Projects() {
                       {p.description}
                     </p>
                   </div>
-                  <div className="flex shrink-0 items-center gap-4">
+                  <div className="relative z-10 flex shrink-0 items-center gap-4">
                     {p.demo ? (
                       <a
                         href={p.demo}
@@ -155,6 +167,17 @@ export function Projects() {
                       <ArrowUpRightIcon className="h-3 w-3" />
                     </a>
                   </div>
+
+                  <a
+                    href={p.demo ?? p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 z-0"
+                  >
+                    <span className="sr-only">
+                      {p.title} — {p.demo ? "Demo öffnen" : "Code öffnen"}
+                    </span>
+                  </a>
                 </article>
               ))}
             </div>

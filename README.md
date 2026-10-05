@@ -63,7 +63,7 @@ Creme-, Gold- und Kakao-Palette.
 | Bereich | Feature | Beschreibung |
 |---------|---------|--------------|
 | Einstieg | **Hero-Sektion** | Vollflaechiger Einstieg mit Video-/Poster-Asset, Kurzprofil und direkten Aktionen |
-| Portfolio | **Projektkarten** | Ausgewaehlte Projekte mit Beschreibung, Tech-Stack, Live-Demo, GitHub-Link und Bildwechsel |
+| Portfolio | **Projektkarten** | Ausgewaehlte Projekte mit Beschreibung, Tech-Stack, Live-Demo, GitHub-Link und Bildwechsel; die ganze Karte oeffnet die Live-Demo |
 | Profil | **Skill-Uebersicht** | Gruppierte Technologien fuer Frontend, Backend, Datenbanken, Tools, Deployment und KI-gestuetzte Entwicklung |
 | Karriere | **Werdegang** | Kompakte Timeline mit DCI-Bootcamp, Praktikum und frueherer technischer Erfahrung |
 | Kontakt | **Direkte Kontaktwege** | E-Mail, Telefon, LinkedIn, GitHub und PDF-Lebenslauf sind schnell erreichbar |
@@ -108,7 +108,7 @@ Creme-, Gold- und Kakao-Palette.
 
 | Projekt | Typ | Stack | Links |
 |---------|-----|-------|-------|
-| **Aue-Bäckerei Kassel** | Übungsprojekt / Bäckerei-Bestellplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, next-intl | [Code](https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel) |
+| **Aue-Bäckerei Kassel** | Übungsprojekt / Bäckerei-Bestellplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, next-intl | [Demo](https://aue-baeckerei-kassel.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel) |
 | **OMA-NETZ Kassel** | Abschlussprojekt / Nachbarschaftshilfe | Next.js 16, React 19, TypeScript, Prisma, PostgreSQL, NextAuth, Pusher, Groq AI | [Demo](https://oma-netz-final-project-valerija-yev.vercel.app/landing) - [Code](https://github.com/Yevhenii1951/Oma_netz_final_project_Valerija_Yevhenii) |
 | **SalonFlow Kassel** | Übungsprojekt / Lokale Business-Website | Astro, TypeScript, Tailwind CSS, Decap CMS, JSON-LD | [Demo](https://clinquant-jalebi-8c402e.netlify.app/) - [Code](https://github.com/Yevhenii1951/SalonFlow-Kassel) |
 | **Kalyna Ukrainische Kueche** | Übungsprojekt / Restaurant-Plattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Stripe | [Demo](https://restourant-ukrainishe-kueche.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche) |

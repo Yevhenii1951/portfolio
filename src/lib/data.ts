@@ -39,6 +39,8 @@ export const projects: Project[] = [
     imageHover: "/img/aue-2.webp",
     badge: "Übungsprojekt",
     links: {
+      live: "https://aue-baeckerei-kassel.vercel.app/de",
+      liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel",
     },
   },
