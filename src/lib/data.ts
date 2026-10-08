@@ -29,6 +29,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "oma-netz",
+    label: "Next.js · TypeScript · Prisma",
+    title: "OMA-NETZ Kassel",
+    description:
+      "Mein Anteil an der Abschlussarbeit: Anmeldung, Buchungslogik und Datenmodell. Gesucht wird nach Zeitfenster und Standort statt über eine offene Anzeigenliste; Echtzeit-Chat und ein KI-Assistent begleiten die Vermittlung.",
+    highlights: ["Prisma / PostgreSQL", "Pusher", "Groq"],
+    imageFront: "/img/oma-1.webp",
+    imageHover: "/img/oma-2.webp",
+    badge: "Abschlussprojekt",
+    links: {
+      live: "https://oma-netz-final-project-valerija-yev.vercel.app/landing",
+      liveLabel: "Live-Demo",
+      presentation: "https://oma-netz-presentation.onrender.com",
+      code: "https://github.com/Yevhenii1951/Oma_netz_final_project_Valerija_Yevhenii",
+    },
+  },
+  {
     id: "aue-baeckerei",
     label: "Next.js · TypeScript · Supabase",
     title: "Aue-Bäckerei Kassel",
@@ -74,23 +91,6 @@ export const projects: Project[] = [
       live: "https://handwerker-booking-pro-kassel.vercel.app/",
       liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/handwerker-booking-pro-Kassel",
-    },
-  },
-  {
-    id: "oma-netz",
-    label: "Next.js · TypeScript · Prisma",
-    title: "OMA-NETZ Kassel",
-    description:
-      "Mein Anteil an der Abschlussarbeit: Anmeldung, Buchungslogik und Datenmodell. Gesucht wird nach Zeitfenster und Standort statt über eine offene Anzeigenliste; Echtzeit-Chat und ein KI-Assistent begleiten die Vermittlung.",
-    highlights: ["Prisma / PostgreSQL", "Pusher", "Groq"],
-    imageFront: "/img/oma-1.webp",
-    imageHover: "/img/oma-2.webp",
-    badge: "Abschlussprojekt",
-    links: {
-      live: "https://oma-netz-final-project-valerija-yev.vercel.app/landing",
-      liveLabel: "Live-Demo",
-      presentation: "https://oma-netz-presentation.onrender.com",
-      code: "https://github.com/Yevhenii1951/Oma_netz_final_project_Valerija_Yevhenii",
     },
   },
   {
