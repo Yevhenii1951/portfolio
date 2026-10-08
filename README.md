@@ -108,8 +108,8 @@ Creme-, Gold- und Kakao-Palette.
 
 | Projekt | Typ | Stack | Links |
 |---------|-----|-------|-------|
-| **Aue-Bäckerei Kassel** | Übungsprojekt / Bäckerei-Bestellplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, next-intl | [Demo](https://aue-baeckerei-kassel.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel) |
 | **OMA-NETZ Kassel** | Abschlussprojekt / Nachbarschaftshilfe | Next.js 16, React 19, TypeScript, Prisma, PostgreSQL, NextAuth, Pusher, Groq AI | [Demo](https://oma-netz-final-project-valerija-yev.vercel.app/landing) - [Code](https://github.com/Yevhenii1951/Oma_netz_final_project_Valerija_Yevhenii) |
+| **Aue-Bäckerei Kassel** | Übungsprojekt / Bäckerei-Bestellplattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Tailwind CSS 4, next-intl | [Demo](https://aue-baeckerei-kassel.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Aue-Baeckerei-Kassel) |
 | **SalonFlow Kassel** | Übungsprojekt / Lokale Business-Website | Astro, TypeScript, Tailwind CSS, Decap CMS, JSON-LD | [Demo](https://clinquant-jalebi-8c402e.netlify.app/) - [Code](https://github.com/Yevhenii1951/SalonFlow-Kassel) |
 | **Kalyna Ukrainische Kueche** | Übungsprojekt / Restaurant-Plattform | Next.js 16, TypeScript, Supabase, PostgreSQL, Stripe | [Demo](https://restourant-ukrainishe-kueche.vercel.app/de) - [Code](https://github.com/Yevhenii1951/Restourant_ukrainishe_kueche) |
 | **Bergblick Restaurant** | Übungsprojekt / Full-Stack Restaurant-Site | Astro 5, TypeScript, React Islands, Vercel Postgres | [Demo](https://bergblick-restaurant.vercel.app/) - [Code](https://github.com/Yevhenii1951/bergblick-restaurant) |
