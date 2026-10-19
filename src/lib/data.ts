@@ -150,6 +150,8 @@ export const projects: Project[] = [
     imageHover: "/img/lindenhof-2.webp",
     badge: "Übungsprojekt",
     links: {
+      live: "https://cafe-lindenhof.vercel.app/",
+      liveLabel: "Live-Demo",
       code: "https://github.com/Yevhenii1951/cafe-lindenhof",
     },
   },
