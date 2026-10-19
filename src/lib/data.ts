@@ -139,6 +139,20 @@ export const projects: Project[] = [
       code: "https://github.com/Yevhenii1951/SalonFlow-Kassel",
     },
   },
+  {
+    id: "cafe-lindenhof",
+    label: "Astro · TypeScript · Tailwind",
+    title: "Café Lindenhof",
+    description:
+      "Eine Website für ein fiktives Café in Kassel: acht statische Seiten mit Speisekarte, Galerie und Reservierungsformular als Demo. Geübt habe ich ein konsistentes Designsystem und interaktive Elemente ohne React-Inseln.",
+    highlights: ["Astro 7", "Tailwind CSS 4", "Galerie / Lightbox"],
+    imageFront: "/img/lindenhof-1.webp",
+    imageHover: "/img/lindenhof-2.webp",
+    badge: "Übungsprojekt",
+    links: {
+      code: "https://github.com/Yevhenii1951/cafe-lindenhof",
+    },
+  },
 ];
 
 export type SmallProject = {
