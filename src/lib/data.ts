@@ -155,6 +155,20 @@ export const projects: Project[] = [
       code: "https://github.com/Yevhenii1951/cafe-lindenhof",
     },
   },
+  {
+    id: "werkfaden",
+    label: "Medusa 2 · Next.js · PostgreSQL",
+    title: "Werkfaden Workwear",
+    description:
+      "Workwear-Shop mit getrenntem Anfragegeschäft: Preise und Bestand rechnet das Medusa-Backend, Logo-Veredelung und Angebote laufen über einen eigenen Flow mit einmaligen Token-Links statt über den Warenkorb. Angebotsannahme ist per Compare-and-Set gegen Doppelklicks abgesichert.",
+    highlights: ["Medusa 2 / Redis", "Stripe (Testmodus)", "Jest + HTTP-Tests"],
+    imageFront: "/img/werkfaden-1.webp",
+    imageHover: "/img/werkfaden-2.webp",
+    badge: "Übungsprojekt",
+    links: {
+      code: "https://github.com/Yevhenii1951/Werkfaden-Workwear-Shop",
+    },
+  },
 ];
 
 export type SmallProject = {
